@@ -4,18 +4,17 @@ import  Nav  from "react-bootstrap/Nav";
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-light">
       <Container fluid>
         <Navbar.Brand href="#home">
-          <img src="/src/assets/cornerstone.png" alt="Cornerstone" width="30%" height="30%" className="d-inline-block" />{" "}
+          <img src="/src/assets/cornerstone.png" alt="Cornerstone" width="25%" height="25%" className="d-inline-block" />{" "}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About Us</Nav.Link>
-            <Nav.Link href="#services">Our Services</Nav.Link>
-            <Nav.Link href="#schedule">Our Schedule</Nav.Link>
+            <Nav.Link href="#home"><h4>Home</h4></Nav.Link>
+            <Nav.Link href="#about"><h4>About Us</h4></Nav.Link>
+            <Nav.Link href="#schedule"><h4>Our Schedule</h4></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

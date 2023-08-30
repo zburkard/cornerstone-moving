@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Container } from 'react-bootstrap';
 
 export const ContactUs = () => {
   const form = useRef();
@@ -16,6 +17,9 @@ export const ContactUs = () => {
   };
 
   return (
+    <Container fluid className='mt-4'>
+      <div className='row justify-content-center'>
+        <div className='col-6 bg-light rounded'>
      <form ref={form} onSubmit={sendEmail}>
       <div className="row justify-content-center">
         <div className='col-3'>
@@ -48,11 +52,14 @@ export const ContactUs = () => {
       </div>
       </div>
       <div className="row text-center">
-        <div className='col-11 p-3'>
+        <div className='col-12 p-3'>
       <input className="bg-primary rounded" type="submit" value="Send" />
       </div>
       </div>
      </form>
+     </div>
+     </div>
+     </Container>
   );
 };
 

@@ -5,7 +5,7 @@ import  Container  from "react-bootstrap/Container";
 function Schedule() {
   return (
     <Container fluid className="text-center">
-      <iframe src="https://calendar.google.com/calendar/embed?src=cornerstonemoving%40gmail.com&ctz=America%2FNew_York" width="800" height="600" ></iframe>
+      <iframe src="https://calendar.google.com/calendar/embed?src=zbtoyota%40gmail.com&ctz=America%2FDenver" width="800" height="600" className="rounded"></iframe>
     </Container>
   );
 }
