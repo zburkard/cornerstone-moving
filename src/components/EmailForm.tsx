@@ -17,48 +17,20 @@ export const ContactUs = () => {
   };
 
   return (
-    <Container fluid className='mt-4'>
-      <div className='row justify-content-center'>
-        <div className='col-6 bg-light rounded'>
+    <Container fluid>
      <form ref={form} onSubmit={sendEmail}>
-      <div className="row justify-content-center">
-        <div className='col-3'>
           <label className='p-2'>Name:</label>
-          <input type="text" name="user_name" />
-        </div>
-      </div>
-      <div className="row justify-content-center">
-        <div className='col-3'>
+          <input type="text" name="user_name" className='col-8' />
       <label className="p-2">Phone Number:</label>
-      <input type="tel" maxLength={10} name="phone_number" />
-        </div>
-      </div>
-      <div className="row justify-content-center">
-        <div className='col-3'>
+      <input type="tel" maxLength={10} name="phone_number" className='col-8'/>
       <label className='p-2'>Email:</label>
-      <input type="email" name="user_email" />
-        </div>
-      </div>
-      <div className="row justify-content-center">
-        <div className='col-3'>
+      <input type="email" name="user_email" className='col-8'/>
       <label className="p-2">Day and Time you would like us to help with your move:</label>
       <input type="datetime-local" name="date" />
-          </div>
-        </div>
-      <div className="row justify-content-center mt-1">
-        <div className='col-3 d-flex align-items-center'>
       <label className="p-2">Anything additional you would like us to know:</label>
-      <textarea name="message" placeholder='Enter your message here...' />
-      </div>
-      </div>
-      <div className="row text-center">
-        <div className='col-12 p-3'>
-      <input className="bg-primary rounded" type="submit" value="Send" />
-      </div>
-      </div>
+      <textarea name="message" placeholder='Enter your message here...' className='col-8'/>
+      <input className="btn btn-success rounded col-12 mt-3" type="submit" value="Send" />
      </form>
-     </div>
-     </div>
      </Container>
   );
 };

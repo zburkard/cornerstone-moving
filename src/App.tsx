@@ -1,7 +1,7 @@
 import NavBar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Schedule from './components/Schedule';
-import ContactUs from './components/EmailForm';
+// import ContactUs from './components/EmailForm';
 import AboutUs from './components/About';
 import  Container  from 'react-bootstrap/Container';
 import './index.css'
@@ -16,7 +16,7 @@ function App() {
       <Container fluid>
         <AboutUs />
         <Schedule />
-        <ContactUs />
+        {/* <ContactUs /> */}
         <div className='row mt-5'></div>
         </Container>
     </>
