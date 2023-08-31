@@ -1,7 +1,6 @@
 import NavBar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Schedule from './components/Schedule';
-// import ContactUs from './components/EmailForm';
 import AboutUs from './components/About';
 import  Container  from 'react-bootstrap/Container';
 import './index.css'
@@ -10,7 +9,7 @@ function App() {
 
   return (
     <>
-    <div className='sticky-top'>
+    <div className='sticky-top bg-slick'>
        <NavBar />
     </div>
       <Container fluid>

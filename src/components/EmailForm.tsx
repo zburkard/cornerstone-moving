@@ -25,7 +25,7 @@ export const ContactUs = () => {
       <input type="tel" maxLength={10} name="phone_number" className='col-8'/>
       <label className='p-2'>Email:</label>
       <input type="email" name="user_email" className='col-8'/>
-      <label className="p-2">Day and Time you would like us to help with your move:</label>
+      <label className="p-2">Day and Time of Move</label>
       <input type="datetime-local" name="date" />
       <label className="p-2">Anything additional you would like us to know:</label>
       <textarea name="message" placeholder='Enter your message here...' className='col-8'/>
